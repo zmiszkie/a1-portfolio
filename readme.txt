@@ -1,4 +1,4 @@
---Readme document for *author*--
+--Readme document for Zachary Miszkiewicz--
 
 A reminder on academic integrity, as described in the syllabus.
 

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Zachary Miszkiewicz
+EMAIL: zmiszkie@uci.edu
 -->
 
 <head>
@@ -12,13 +12,68 @@ EMAIL: Your email here
   <meta name="description" content="description of your page">
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <title>Zachary's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+
 </head>
 <body>
+  <nav id="desktop-nav">
+    <div class="logo">Zachary Miszkiewicz</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Zachary Miszkiewicz</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+
+  </nav>
+  <section id="profile">
+    <div class="section__pic-conatiner">
+      <image src="./assets/profile-pic.png" alt="My Profile Picture!"/>
+    </div>
+    <div class="section__text">
+      <p class="section__text_p1">Hi, I'm</p>
+      <h1>Zac</h1>
+      <p class="section__text_p2">ICS 133 Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin_logo.png" alt="My Linkedin Profile"/ class="icon" onclick="location.href='https://www.linkedin.com/in/zac-miszkiewicz-713411299/'">
+        <img src="./assets/google_material_icon.png" alt="My Class GitHub Profile"/ class="icon" onclick="location.href='https://github.com/uci-inf-133/a1-personal-website-zmiszkie'">
+      </div>
+    </div>
+
+
+  </section>
+
+
+
   <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
     </a>
   </p>
+  <script src="script.js"></script>
 </body>
 </html>
